@@ -1,1 +1,5 @@
 haha, this is a blog test
+
+int main(){
+    return 0;
+}
