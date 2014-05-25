@@ -1,5 +1,6 @@
 /*
-There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. 
+The overall run time complexity should be O(log (m+n)).
 
 简单的来说就是找出A，B中第k小的元素。可以在A中寻找第p的元素，然后在B寻找k-p的元素，如果A[p-1] == B[k-p-1]，说明找到了并返回。
 
