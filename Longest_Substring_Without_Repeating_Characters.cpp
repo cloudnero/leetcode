@@ -1,10 +1,13 @@
 /*
 Longest Substring Without Repeating Characters
 
-Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. 
+Given a string, find the length of the longest substring without repeating characters. 
+For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. 
 For "bbbbb" the longest substring is "b", with the length of 1.
 
-将元素遍历，并将结果保存在vector里，每次遍历新元素时去vector查找是否存在该元素，如果不存在就将该元素添加，如果存在，查找出存在的元素位置k，并将此时的vector的长度与maxlen作比较，去最大值。然后将vector的头元素到k全部删除掉，并将k添加进vector。
+将元素遍历，并将结果保存在vector里，每次遍历新元素时去vector查找是否存在该元素，如果不存在就将该元素添加，
+如果存在，查找出存在的元素位置k，并将此时的vector的长度与maxlen作比较，去最大值。然后将vector的头元素到k
+全部删除掉，并将k添加进vector。
 */
 int lengthOfLongestSubstring(string s) {
         vector<char> ans;
